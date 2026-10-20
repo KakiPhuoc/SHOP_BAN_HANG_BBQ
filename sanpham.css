@@ -1,0 +1,100 @@
+body {
+    margin: auto;
+    width: 90%;
+}
+
+.dmucsanpham {
+    text-align: center;
+    color: #e53935;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#product-connect {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#product-connect .product {
+    text-align: center;
+    border: 3px dashed #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(217, 13, 13, 0.5);
+    
+    /* Căn flexbox để giữ các thành phần bằng hàng và nút bấm luôn sát đáy */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Thẻ <a> bao bọc ảnh và tiêu đề để bấm xem chi tiết không làm vỡ khung */
+#product-connect .product > a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#product-connect .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #3498db;
+}
+
+#product-connect .product img {
+    width: 100%;
+    height: 200px; /* Ép chiều cao cố định 200px cho tất cả các ảnh */
+    border-radius: 20px;
+    object-fit: cover; /* Tự động cắt tỉa ảnh vừa khung mà không làm méo hình */
+}
+
+#product-connect .product img:hover {
+    opacity: 0.8;
+}
+
+#product-connect .product h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    /* Cố định chiều cao cho tiêu đề tránh lệch dòng khi tên món ngắn/dài */
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product-connect .product p {
+    color: #ff4d4d;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+#product-connect .product form {
+    margin-top: auto;
+}
+
+.btn-mua {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-mua:hover {
+    background-color: #ff5252;
+    transform: scale(1.02);
+}

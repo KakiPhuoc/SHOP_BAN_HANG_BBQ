@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fcf8f8;
+    font-family: 'Times New Roman', Times, serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#dangnhap {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border: 2px dashed #d32f2f; 
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+#dangnhap h1 {
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 25px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#dangnhap h3 {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#nhap-ten,
+#nhap-mk {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+#nhap-ten:focus,
+#nhap-mk:focus {
+    border-color: #d32f2f;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.3);
+}
+
+#nut-dangnhap {
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    padding: 14px;
+    border: 1px dashed white; 
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#nut-dangnhap:hover {
+    background-color: #cc0000;
+}
+
+.thongbao-loi {
+    color: #d32f2f; 
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif; 
+}
+
+
+.chuyen-trang {
+    text-align: center;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+}
+
+
+.link-dangky {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.link-dangky:hover {
+    color: #ff0000; 
+    text-decoration: underline; 
+}
